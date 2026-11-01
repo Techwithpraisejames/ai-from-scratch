@@ -1,30 +1,27 @@
 # AI From Scratch
 
-An eight-week, practical introduction to AI for developers who know basic programming but are new to machine learning and modern AI systems.
+A practical, beginner-friendly collection of lessons, code examples, and exercises for learning artificial intelligence and AI engineering.
 
-**Creator:** Tech with Praise James  
-**Schedule:** Sundays, November 1–December 20, 2026  
-**Format:** One five-minute lesson each week, plus a small reproducible exercise.
+Start with the fundamentals, explore the examples, and work through the exercises at your own pace. The material is designed for people new to AI; some later examples may require basic Python knowledge.
 
-## Curriculum
+## Start here
 
-| Week | Date | Topic |
-|---|---|---|
-| 01 | Nov 1 | AI vs. Machine Learning vs. Deep Learning |
-| 02 | Nov 8 | How Models Learn |
-| 03 | Nov 15 | How LLMs Work |
-| 04 | Nov 22 | Prompt Engineering |
-| 05 | Nov 29 | Hallucinations and Verification |
-| 06 | Dec 6 | AI APIs |
-| 07 | Dec 13 | Retrieval-Augmented Generation |
-| 08 | Dec 20 | AI Agents and Tool Calling |
+### AI vs. Machine Learning vs. Deep Learning
 
-**Watch Week 01:** [AI vs. Machine Learning vs. Deep Learning](https://youtu.be/1YDNWFDSLgU)
+Learn how AI, machine learning, and deep learning relate to one another through a rule-based spam-filter example. Explore why an exact-match rule can miss a suspicious email and how a learning-based approach differs.
 
-Start with the [Week 01 lesson notes, code, and exercise](week-01-ai-fundamentals/README.md).
+- **Watch the lesson:** [AI vs. Machine Learning vs. Deep Learning](https://youtu.be/1YDNWFDSLgU)
+- **Explore the materials:** [Lesson notes, Python example, and exercise](week-01-ai-fundamentals/README.md)
 
 ## How to use this repository
 
-Watch the corresponding lesson, read the week's README, and complete the exercise. Most weeks require only basic programming knowledge; the first lesson requires no installation. Code and starter files will be added as lessons are published.
+1. Open a lesson folder and read its README for the concepts and prerequisites.
+2. Review the included code and run it locally using the instructions in that folder.
+3. Complete the exercise, then modify the example to test your understanding.
+4. Compare the behavior you observe with the explanation in the lesson.
 
-Examples are educational and intentionally simplified. Do not deploy toy classifiers as production security systems.
+Each lesson folder is intended to keep its explanations, code, and exercises together so you can revisit or reproduce the examples without following a publishing schedule. Check individual folders for setup instructions and required files.
+
+## A note on the examples
+
+Examples are educational and intentionally simplified. A rule-based spam filter is not a trained machine-learning model, and toy classifiers should not be deployed as production security systems.

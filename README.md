@@ -24,4 +24,4 @@ Each lesson folder is intended to keep its explanations, code, and exercises tog
 
 ## A note on the examples
 
-Examples are educational and intentionally simplified. A rule-based spam filter is not a trained machine-learning model, and toy classifiers should not be deployed as production security systems.
+Examples are educational and intentionally simplified. 

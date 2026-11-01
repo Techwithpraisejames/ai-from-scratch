@@ -19,7 +19,9 @@ An eight-week, practical introduction to AI for developers who know basic progra
 | 07 | Dec 13 | Retrieval-Augmented Generation |
 | 08 | Dec 20 | AI Agents and Tool Calling |
 
-Start with [Week 01](week-01-ai-fundamentals/README.md).
+**Watch Week 01:** [AI vs. Machine Learning vs. Deep Learning](https://youtu.be/1YDNWFDSLgU)
+
+Start with the [Week 01 lesson notes, code, and exercise](week-01-ai-fundamentals/README.md).
 
 ## How to use this repository
 

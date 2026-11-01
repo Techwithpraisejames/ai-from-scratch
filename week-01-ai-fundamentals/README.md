@@ -19,4 +19,4 @@ An ML-based approach would require labeled examples (spam/not spam), a training 
 
 Complete [exercises.md](exercises.md). No libraries, API keys, or paid services are required.
 
-**YouTube lesson:** Link to be added after publication.
+**YouTube lesson:** [Watch Week 01 — AI vs. Machine Learning vs. Deep Learning](https://youtu.be/1YDNWFDSLgU)

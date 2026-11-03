@@ -13,6 +13,12 @@ Learn how AI, machine learning, and deep learning relate to one another through 
 - **Watch the lesson:** [AI vs. Machine Learning vs. Deep Learning](https://youtu.be/1YDNWFDSLgU)
 - **Explore the materials:** [Lesson notes, Python example, and exercise](week-01-ai-fundamentals/README.md)
 
+### How Machine Learning Models Learn
+
+Train and evaluate a text classifier using labeled email examples and a fixed test set.
+
+- **Explore the materials:** [Lesson notes, dataset, Python code, and exercises](week-02-how-models-learn/README.md)
+
 ## How to use this repository
 
 1. Open a lesson folder and read its README for the concepts and prerequisites.

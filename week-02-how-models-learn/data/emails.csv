@@ -1,0 +1,45 @@
+split,label,text
+train,spam,Claim your prize today
+train,spam,Win a cash prize now
+train,spam,Congratulations you won a free gift
+train,spam,Collect your reward today
+train,spam,Click here to claim your reward
+train,spam,You have won a special prize
+train,spam,Free money is waiting for you
+train,spam,Claim your free voucher now
+train,spam,Limited offer collect your gift
+train,spam,Urgent claim your cash reward
+train,spam,Win a free shopping voucher
+train,spam,You are selected for a prize
+train,spam,Collect your cash gift now
+train,spam,Congratulations claim your bonus
+train,spam,Exclusive reward click to collect
+train,spam,Get your free prize today
+train,ham,Please review the meeting notes
+train,ham,Our project meeting is tomorrow
+train,ham,Can you send the report today
+train,ham,Lunch with the team on Friday
+train,ham,The class starts at nine
+train,ham,Your appointment is confirmed
+train,ham,I attached the project files
+train,ham,Please update the document
+train,ham,The weekly lesson is ready
+train,ham,See you at the office tomorrow
+train,ham,Can we discuss the presentation
+train,ham,Your order will arrive tomorrow
+train,ham,Here are the notes from class
+train,ham,Please check the calendar invite
+train,ham,The code review is complete
+train,ham,Thanks for sharing the article
+test,spam,Claim your free cash prize
+test,spam,Collect your special reward now
+test,spam,Congratulations win a gift today
+test,spam,Click to get your bonus prize
+test,spam,Your free voucher is waiting
+test,spam,Win cash and collect your reward
+test,ham,Please send the meeting agenda
+test,ham,Your project report is ready
+test,ham,See you in class tomorrow
+test,ham,Can you review the code today
+test,ham,The team presentation is on Friday
+test,ham,Your appointment is tomorrow

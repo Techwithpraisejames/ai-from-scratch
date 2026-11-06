@@ -2,7 +2,7 @@
 
 This lesson follows the [spam-classifier experiment](../week-02-how-models-learn/README.md). The previous classifier predicted **spam** or **ham**. Here, a pretrained *causal language model* predicts tokens and generates a sequence of text.
 
-You will run **distilgpt2**, a small, older GPT-2-family language model, locally on your laptop using Python and VS Code. It is useful for demonstrating the mechanics of generation; it is **not** representative of the capabilities of modern chat assistants.
+You will run **HuggingFaceTB/SmolLM2-135M**, a compact pretrained causal language model released in 2024, locally on your laptop using Python and VS Code. It is useful for demonstrating the mechanics of generation, but its small size means it is **not** representative of the capabilities of modern chat assistants.
 
 ## Files
 
@@ -24,7 +24,7 @@ Transformers use attention to process relationships among tokens in context. Thi
 ## Prerequisites
 
 - Python **3.10–3.12**, 64-bit, and VS Code with the Python extension.
-- Internet access **on the first run** to download the public model/tokenizer files (roughly hundreds of MB in total); later runs reuse the local Hugging Face cache.
+- Internet access **on the first run** to download the public model/tokenizer files (several hundred MB in total, depending on the downloaded files); later runs reuse the local Hugging Face cache.
 - Sufficient free disk space and RAM for Python, PyTorch, and the model. CPU execution is intentional, so the first load and generation may take some time.
 
 > The pinned versions are for reproducing this lesson. Installation depends on your OS and Python version. We will validate the actual output on your laptop before writing the video script.
@@ -98,7 +98,7 @@ Other supported flags: `--max-new-tokens 40`, `--seed 123`, `--temperature 0.5`.
 
 ## Reproducibility and safety
 
-The model identifier and Python package versions are pinned, but the model repository's default revision can change. For strict long-term reproducibility, record the downloaded model revision and installed package versions alongside your terminal output; a commit-pinned model revision can be added after verification. The script uses CPU only and downloads model files through Hugging Face Transformers.
+The model identifier and Python package versions are specified, but the model repository's default revision can change. For strict long-term reproducibility, record the downloaded model revision and installed package versions alongside your terminal output; a commit-pinned model revision can be added after verification. The script uses CPU only and downloads model files through Hugging Face Transformers. Token pieces use model-specific conventions; do not assume a particular visible space marker or one-token-per-word mapping.
 
 Do not treat model output as verified facts or instructions. Do not use this small demo model for production advice or high-stakes decisions.
 

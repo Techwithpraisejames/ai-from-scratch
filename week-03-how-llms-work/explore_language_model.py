@@ -3,7 +3,7 @@
 Run from any working directory:
     python explore_language_model.py
 
-The first run downloads the public distilgpt2 model and tokenizer.
+The first run downloads the public SmolLM2-135M model and tokenizer.
 This script performs inference; it does not train a language model.
 """
 
@@ -15,7 +15,7 @@ from dataclasses import dataclass
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-MODEL_ID = "distilgpt2"
+MODEL_ID = "HuggingFaceTB/SmolLM2-135M"
 DEFAULT_PROMPT = "The future of artificial intelligence is"
 DEFAULT_SEED = 42
 DEFAULT_NEW_TOKENS = 24
@@ -64,7 +64,7 @@ def show_tokens(tokenizer, prompt: str) -> torch.Tensor:
     print(f"Number of tokens: {len(token_ids)}")
     for token_id, piece in zip(token_ids.tolist(), pieces):
         print(f"  {token_id:>6}  {piece!r}")
-    print("Note: the Ġ marker in GPT-2 token pieces represents a preceding space.")
+    print("Token pieces use tokenizer-specific notation; decoded text may differ.")
     return encoded["input_ids"]
 
 

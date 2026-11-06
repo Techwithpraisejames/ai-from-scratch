@@ -19,6 +19,12 @@ Train and evaluate a text classifier using labeled email examples and a fixed te
 
 - **Explore the materials:** [Lesson notes, dataset, Python code, and exercises](week-02-how-models-learn/README.md)
 
+### How Large Language Models Work
+
+Explore tokenization, next-token probabilities, and text generation with a small pretrained model running locally on your laptop.
+
+- **Explore the materials:** [Lesson notes, Python code, setup, and exercises](week-03-how-llms-work/README.md)
+
 ## How to use this repository
 
 1. Open a lesson folder and read its README for the concepts and prerequisites.

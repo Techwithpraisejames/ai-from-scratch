@@ -53,7 +53,7 @@ def parse_args() -> Settings:
     )
 
 
-def show_tokens(tokenizer, prompt: str) -> torch.Tensor:
+def show_tokens(tokenizer, prompt: str):
     """Display token pieces and their integer IDs."""
     encoded = tokenizer(prompt, return_tensors="pt")
     token_ids = encoded["input_ids"][0]
@@ -65,7 +65,7 @@ def show_tokens(tokenizer, prompt: str) -> torch.Tensor:
     for token_id, piece in zip(token_ids.tolist(), pieces):
         print(f"  {token_id:>6}  {piece!r}")
     print("Token pieces use tokenizer-specific notation; decoded text may differ.")
-    return encoded["input_ids"]
+    return encoded
 
 
 @torch.inference_mode()
@@ -84,11 +84,12 @@ def show_next_token_candidates(model, tokenizer, input_ids: torch.Tensor) -> Non
 
 
 @torch.inference_mode()
-def generate_examples(model, tokenizer, input_ids: torch.Tensor, settings: Settings) -> None:
+def generate_examples(model, tokenizer, encoded, settings: Settings) -> None:
     """Compare greedy decoding with seeded probabilistic sampling."""
     print("\nGREEDY GENERATION (chooses the highest-scoring next token)")
     greedy_ids = model.generate(
-        input_ids=input_ids,
+        input_ids=encoded["input_ids"],
+        attention_mask=encoded["attention_mask"],
         max_new_tokens=settings.max_new_tokens,
         do_sample=False,
         pad_token_id=tokenizer.eos_token_id,
@@ -102,7 +103,8 @@ def generate_examples(model, tokenizer, input_ids: torch.Tensor, settings: Setti
         f"(seed={settings.seed}, temperature={settings.temperature})"
     )
     sampled_ids = model.generate(
-        input_ids=input_ids,
+        input_ids=encoded["input_ids"],
+        attention_mask=encoded["attention_mask"],
         max_new_tokens=settings.max_new_tokens,
         do_sample=True,
         temperature=settings.temperature,
@@ -114,17 +116,17 @@ def generate_examples(model, tokenizer, input_ids: torch.Tensor, settings: Setti
 def main() -> None:
     settings = parse_args()
     print(f"Model: {MODEL_ID}")
-    print("Device: CPU")
-    print("This is pretrained-model inference, not training.")
+    print("Running on: CPU")
+    print("Task: Text generation using a pretrained language model")
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
     model = AutoModelForCausalLM.from_pretrained(MODEL_ID)
     model.to("cpu")
     model.eval()
 
-    input_ids = show_tokens(tokenizer, settings.prompt)
-    show_next_token_candidates(model, tokenizer, input_ids)
-    generate_examples(model, tokenizer, input_ids, settings)
+    encoded = show_tokens(tokenizer, settings.prompt)
+    show_next_token_candidates(model, tokenizer, encoded["input_ids"])
+    generate_examples(model, tokenizer, encoded, settings)
 
 
 if __name__ == "__main__":

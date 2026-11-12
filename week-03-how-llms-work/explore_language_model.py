@@ -116,8 +116,6 @@ def generate_examples(model, tokenizer, encoded, settings: Settings) -> None:
 def main() -> None:
     settings = parse_args()
     print(f"Model: {MODEL_ID}")
-    print("Running on: CPU")
-    print("Task: Text generation using a pretrained language model")
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
     model = AutoModelForCausalLM.from_pretrained(MODEL_ID)

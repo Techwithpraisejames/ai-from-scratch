@@ -17,6 +17,7 @@ Learn how AI, machine learning, and deep learning relate to one another through 
 
 Train and evaluate a text classifier using labeled email examples and a fixed test set.
 
+- **Watch the lesson:** [How Machine Learning Models Learn](https://youtu.be/bJuibUsvf2s?si=RH26q3ViE8-hMHgL)
 - **Explore the materials:** [Lesson notes, dataset, Python code, and exercises](week-02-how-models-learn/README.md)
 
 ### How Large Language Models Work

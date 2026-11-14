@@ -2,6 +2,8 @@
 
 This lesson builds on the [Week 01 rule-based spam filter](../week-01-ai-fundamentals/README.md). Instead of writing a new `if` rule for each phrase, we train a **real machine-learning classifier** on labeled email examples.
 
+**Watch the video lesson:** [How Machine Learning Models Actually Learn From Data](https://youtu.be/bJuibUsvf2s?si=RH26q3ViE8-hMHgL)
+
 **Goal:** Understand labeled data, numerical text features, training, inference (prediction), and evaluation on held-out examples.
 
 ## Files

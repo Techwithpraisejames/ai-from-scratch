@@ -4,6 +4,8 @@ This lesson follows the [spam-classifier experiment](../week-02-how-models-learn
 
 You will run **HuggingFaceTB/SmolLM2-135M**, a compact pretrained causal language model released in 2024, locally on your laptop using Python and VS Code. It is useful for demonstrating the mechanics of generation, but its small size means it is **not** representative of the capabilities of modern chat assistants.
 
+**Watch the video lesson:** [How Large Language Models Work: Tokens and Text Generation](https://youtu.be/2D8bazmxERg)
+
 ## Files
 
 - [`explore_language_model.py`](explore_language_model.py) — token inspection, next-token probabilities, greedy generation, and seeded sampling.

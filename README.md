@@ -24,6 +24,7 @@ Train and evaluate a text classifier using labeled email examples and a fixed te
 
 Explore tokenization, next-token probabilities, and text generation with a small pretrained model running locally on your laptop.
 
+- **Watch the lesson:** [How Large Language Models Work: Tokens and Text Generation](https://youtu.be/2D8bazmxERg)
 - **Explore the materials:** [Lesson notes, Python code, setup, and exercises](week-03-how-llms-work/README.md)
 
 ## How to use this repository

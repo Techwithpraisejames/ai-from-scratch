@@ -48,7 +48,8 @@ From the repository root:
 cd week-04-prompt-engineering
 py -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-$env:OPENAI_API_KEY="your-api-key"
+Copy-Item .env.example .env
+# Edit .env and replace the placeholder with your actual key
 .\.venv\Scripts\python.exe evaluate_prompts.py
 ```
 
@@ -59,11 +60,12 @@ cd week-04-prompt-engineering
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-export OPENAI_API_KEY="your-api-key"
+cp .env.example .env
+# Edit .env and replace the placeholder with your actual key
 python evaluate_prompts.py
 ```
 
-Never commit API keys, `.env` files, or exported secrets. The script reads the key from the environment.
+Never commit API keys, `.env` files, or exported secrets. The script loads a local `.env` file with `python-dotenv`. Copy `.env.example` to `.env` and replace the placeholder with your own API key. `.env` is ignored by Git.
 
 **Cost warning:** The complete experiment sends **200 API requests** (50 tickets × 4 configurations), which incur token-based API charges. Inspect the code and current API pricing before running it.
 

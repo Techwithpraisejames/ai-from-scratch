@@ -15,7 +15,7 @@ from pathlib import Path
 from openai import OpenAI
 
 CATEGORIES = ("Billing", "Technical Issue", "Account Access", "Feature Request")
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+MODEL = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 DATA = Path(__file__).parent / "data" / "support_tickets.csv"
 OUTPUT = Path(__file__).parent / "results.csv"
 

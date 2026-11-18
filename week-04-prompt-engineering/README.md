@@ -75,7 +75,7 @@ The script prints a summary and writes `results.csv` locally with one row per re
 
 **Accuracy** is the percentage of all 50 tickets where the predicted category exactly matches the manually assigned label. **Format compliance** checks whether the model returned the exact category label (or a valid category in the enforced schema). These are separate measures: a perfectly formatted prediction can still be incorrect.
 
-Errors count as failures. The script uses `temperature=0` to reduce sampling variability, but identical outputs are not guaranteed across runs or model updates. The 50 authored examples are a small teaching dataset, not a production benchmark. Few-shot examples are **not drawn from these 50 evaluation rows**.
+Errors count as failures. The script does not set `temperature` because GPT-6 Luna rejects that parameter. Identical outputs are not guaranteed across runs or model updates. The 50 authored examples are a small teaching dataset, not a production benchmark. Few-shot examples are **not drawn from these 50 evaluation rows**.
 
 We have not run the API experiment in this repository and make no claims about which version will win. Run it and examine the failures before drawing conclusions.
 

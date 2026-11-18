@@ -36,7 +36,7 @@ We run the **same 50 tickets** against four configurations:
 - An OpenAI API key with available API credits
 - Network access to the OpenAI API
 
-The experiment uses the OpenAI Python SDK and defaults to `gpt-4.1-mini`. You can set `OPENAI_MODEL` to another model supporting the Responses API and structured outputs. Model support and prices may change; verify current availability in the [OpenAI API documentation](https://platform.openai.com/docs/).
+The experiment uses the OpenAI Python SDK and defaults to `gpt-6-luna`. You can set `OPENAI_MODEL` to another model supporting the Responses API and structured outputs. Model support and prices may change; verify current availability in the [OpenAI API documentation](https://platform.openai.com/docs/).
 
 ## Run locally
 

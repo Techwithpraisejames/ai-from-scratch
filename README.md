@@ -27,11 +27,17 @@ Explore tokenization, next-token probabilities, and text generation with a small
 - **Watch the lesson:** [How Large Language Models Work: Tokens and Text Generation](https://youtu.be/2D8bazmxERg)
 - **Explore the materials:** [Lesson notes, Python code, setup, and exercises](week-03-how-llms-work/README.md)
 
+### Prompt Engineering: Design, Test, and Evaluate AI Instructions
+
+Use the OpenAI API to compare four prompting configurations across 50 labeled support tickets. Measure classification accuracy, format compliance, and failures.
+
+- **Explore the materials:** [Lesson notes, 50-ticket dataset, Python evaluation, and exercises](week-04-prompt-engineering/README.md)
+
 ### How Neural Networks Learn: Backpropagation
 
 Train a small neural network on XOR to see forward propagation, loss, backpropagation, and parameter updates in action.
 
-- **Explore the materials:** [Lesson notes, Python experiment, setup, and exercises](week-04-neural-networks-backpropagation/README.md)
+- **Explore the materials:** [Lesson notes, Python experiment, setup, and exercises](week-05-neural-networks-backpropagation/README.md)
 
 ## How to use this repository
 

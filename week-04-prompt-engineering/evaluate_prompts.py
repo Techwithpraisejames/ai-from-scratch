@@ -13,7 +13,7 @@ from collections import Counter
 from pathlib import Path
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAI, BadRequestError
 
 load_dotenv()
 
@@ -61,7 +61,6 @@ def classify(client, ticket, version):
         "model": MODEL,
         "instructions": instructions,
         "input": ticket,
-        "temperature": 0,
     }
     if version == "schema":
         arguments["text"] = {
@@ -107,6 +106,11 @@ def main():
                 error = ""
                 input_tokens = usage.input_tokens if usage else ""
                 output_tokens = usage.output_tokens if usage else ""
+            except BadRequestError as exc:
+                raise SystemExit(
+                    f"API rejected the request for {version} / {row['ticket_id']}: {exc}\n"
+                    "Stopping to avoid repeating a configuration error across all tickets."
+                ) from exc
             except Exception as exc:
                 predicted, raw, compliant = "", "", False
                 input_tokens, output_tokens = "", ""

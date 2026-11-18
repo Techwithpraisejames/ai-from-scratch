@@ -12,7 +12,10 @@ import time
 from collections import Counter
 from pathlib import Path
 
+from dotenv import load_dotenv
 from openai import OpenAI
+
+load_dotenv()
 
 CATEGORIES = ("Billing", "Technical Issue", "Account Access", "Feature Request")
 MODEL = os.getenv("OPENAI_MODEL", "gpt-6-luna")

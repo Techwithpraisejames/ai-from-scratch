@@ -31,6 +31,7 @@ Explore tokenization, next-token probabilities, and text generation with a small
 
 Use the OpenAI API to compare four prompting configurations across 50 labeled support tickets. Measure classification accuracy, format compliance, and failures.
 
+- **Watch the lesson:** [Prompt Engineering Explained: 4 Techniques Tested with Python](https://youtu.be/zyeF_r8LdiI)
 - **Explore the materials:** [Lesson notes, 50-ticket dataset, Python evaluation, and exercises](week-04-prompt-engineering/README.md)
 
 ### How Neural Networks Learn: Backpropagation

@@ -2,6 +2,8 @@
 
 **AI From Scratch — Week 4**
 
+**Watch the lesson:** [Prompt Engineering Explained: 4 Techniques Tested with Python](https://youtu.be/zyeF_r8LdiI)
+
 In [Week 3](../week-03-how-llms-work/README.md), we explored tokens, next-token predictions, and decoding. This week, we use the OpenAI API to see how changing instructions affects an instruction-tuned language model's output. We evaluate the same **50 labeled customer support tickets** under four configurations.
 
 ## What you'll learn
@@ -77,7 +79,7 @@ The script prints a summary and writes `results.csv` locally with one row per re
 
 Errors count as failures. The script does not set `temperature` because GPT-6 Luna rejects that parameter. Identical outputs are not guaranteed across runs or model updates. The 50 authored examples are a small teaching dataset, not a production benchmark. Few-shot examples are **not drawn from these 50 evaluation rows**.
 
-We have not run the API experiment in this repository and make no claims about which version will win. Run it and examine the failures before drawing conclusions.
+The video demonstrates the completed evaluation: basic 0/50 exact matches, structured 49/50, few-shot 50/50, and schema 50/50. Run the experiment and inspect the raw outputs alongside the scores.
 
 ## Files
 

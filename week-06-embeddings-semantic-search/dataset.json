@@ -1,0 +1,188 @@
+{
+  "documents": [
+    {
+      "id": "D01",
+      "text": "Requesting a refund for my subscription"
+    },
+    {
+      "id": "D02",
+      "text": "Reset your account password"
+    },
+    {
+      "id": "D03",
+      "text": "Change the email address on your account"
+    },
+    {
+      "id": "D04",
+      "text": "Cancel your recurring membership"
+    },
+    {
+      "id": "D05",
+      "text": "Download a copy of your invoice"
+    },
+    {
+      "id": "D06",
+      "text": "Update your payment card details"
+    },
+    {
+      "id": "D07",
+      "text": "Enable two-factor authentication"
+    },
+    {
+      "id": "D08",
+      "text": "Recover access to a locked account"
+    },
+    {
+      "id": "D09",
+      "text": "Track the delivery of your order"
+    },
+    {
+      "id": "D10",
+      "text": "Return a damaged physical product"
+    },
+    {
+      "id": "D11",
+      "text": "Change the shipping address before dispatch"
+    },
+    {
+      "id": "D12",
+      "text": "Upgrade to the premium plan"
+    },
+    {
+      "id": "D13",
+      "text": "Downgrade to a basic plan"
+    },
+    {
+      "id": "D14",
+      "text": "Export your personal account data"
+    },
+    {
+      "id": "D15",
+      "text": "Permanently delete your account"
+    },
+    {
+      "id": "D16",
+      "text": "Troubleshoot a slow application"
+    },
+    {
+      "id": "D17",
+      "text": "Fix notification settings"
+    },
+    {
+      "id": "D18",
+      "text": "Resolve error E402: payment declined"
+    },
+    {
+      "id": "D19",
+      "text": "Resolve error E503: service unavailable"
+    },
+    {
+      "id": "D20",
+      "text": "Contact customer support"
+    },
+    {
+      "id": "D21",
+      "text": "Pause a subscription temporarily"
+    },
+    {
+      "id": "D22",
+      "text": "Apply a promotional discount code"
+    },
+    {
+      "id": "D23",
+      "text": "Add another member to your team"
+    },
+    {
+      "id": "D24",
+      "text": "Change your preferred language"
+    }
+  ],
+  "queries": [
+    {
+      "text": "How do I get my money back?",
+      "relevant": [
+        "D01"
+      ]
+    },
+    {
+      "text": "I forgot my login secret",
+      "relevant": [
+        "D02"
+      ]
+    },
+    {
+      "text": "I have a new mailbox and want to use it",
+      "relevant": [
+        "D03"
+      ]
+    },
+    {
+      "text": "Stop charging me every month",
+      "relevant": [
+        "D04"
+      ]
+    },
+    {
+      "text": "Where can I get proof of payment?",
+      "relevant": [
+        "D05"
+      ]
+    },
+    {
+      "text": "My bank issued me a replacement credit card",
+      "relevant": [
+        "D06"
+      ]
+    },
+    {
+      "text": "Protect my login with a second verification step",
+      "relevant": [
+        "D07"
+      ]
+    },
+    {
+      "text": "Where is my parcel?",
+      "relevant": [
+        "D09"
+      ]
+    },
+    {
+      "text": "The item arrived broken and I want to send it back",
+      "relevant": [
+        "D10"
+      ]
+    },
+    {
+      "text": "E402",
+      "relevant": [
+        "D18"
+      ]
+    },
+    {
+      "text": "E503",
+      "relevant": [
+        "D19"
+      ]
+    },
+    {
+      "text": "I need a break from my membership without ending it",
+      "relevant": [
+        "D21"
+      ]
+    },
+    {
+      "text": "How do I invite a colleague?",
+      "relevant": [
+        "D23"
+      ]
+    },
+    {
+      "text": "Can I book a flight to Tokyo?",
+      "relevant": []
+    },
+    {
+      "text": "What is the capital of Brazil?",
+      "relevant": []
+    }
+  ]
+}

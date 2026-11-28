@@ -40,6 +40,12 @@ Train a small neural network on XOR to see forward propagation, loss, backpropag
 
 - **Explore the materials:** [Lesson notes, Python experiment, setup, and exercises](week-05-neural-networks-backpropagation/README.md)
 
+### Embeddings and Semantic Search
+
+Explore learned text representations, cosine similarity, and semantic retrieval with EmbeddingGemma 2.
+
+- **Explore the materials:** [Lesson code, dataset, and exercises](week-06-embeddings-semantic-search/README.md)
+
 ## How to use this repository
 
 1. Open a lesson folder and read its README for the concepts and prerequisites.
